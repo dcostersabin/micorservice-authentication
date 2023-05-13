@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  auth-service:
+    image: auth
+    build: ./auth-service
+    ports:
+      - "8000:8000"
+
+  service-1:
+    image: service-1
+    build: ./service-1
+    ports:
+      - "8001:8001"
+
+  service-2:
+    image: service-2
+    build: ./service-2
+    ports:
+      - "8002:8002"
+
+
